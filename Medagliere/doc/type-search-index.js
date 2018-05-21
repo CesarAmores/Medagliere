@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"it.unibs.Medagliere","l":"ElencoGara"},{"p":"it.unibs.Medagliere","l":"ElencoNazione"},{"p":"it.unibs.Medagliere","l":"Gara"},{"p":"it.unibs.Medagliere","l":"MedagliereMain"},{"p":"it.unibs.Medagliere","l":"MenuPrincipale"},{"p":"it.unibs.Medagliere","l":"Nazione"},{"p":"it.unibs.Medagliere","l":"UtilityGaraNazione"}]
