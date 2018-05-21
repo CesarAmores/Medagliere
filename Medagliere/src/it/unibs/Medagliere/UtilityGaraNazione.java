@@ -217,7 +217,7 @@ public class UtilityGaraNazione
    {
 	  reloadNumeroNazioni();//* aggiorno il numero di nazioni
 	  
-	  String listaNomiNazione [] =new String [quantitaNazione]; // creo la lista delle voci nazioni 
+	  String listaNomiNazione [] = new String [quantitaNazione]; // creo la lista delle voci nazioni 
 	  
 	  listaNomiNazione = creaListaNazione();// setto che puntino le stesse celle di memoria del arrayList associato a nazioni
 	  

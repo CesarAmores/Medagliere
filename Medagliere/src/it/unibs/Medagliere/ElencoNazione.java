@@ -39,24 +39,24 @@ public class ElencoNazione
    }
   
 
-   //verifica posizione della nazione
-   public int posizioneGara(Nazione nomeNazione)
-   {
-	   if (listaNazione.isEmpty())return -1;
-	   for( int i = 0; i <listaNazione.size(); i++)
-	   {
-		   if(getNomeNazioneLista(i).equals(nomeNazione.getNomeNazione()) == true) return i;// appena trova una corrispondenza
-	   }
-	  
-	  return -1; // se non trova nulla la nazione non c e
-   }
+//   //verifica posizione della nazione
+//   public int posizioneGara(Nazione nomeNazione)
+//   {
+//	   if (listaNazione.isEmpty())return -1;
+//	   for( int i = 0; i <listaNazione.size(); i++)
+//	   {
+//		   if(getNomeNazioneLista(i).equals(nomeNazione.getNomeNazione()) == true) return i;// appena trova una corrispondenza
+//	   }
+//	  
+//	  return -1; // se non trova nulla la nazione non c e
+//   }
 
 
    /**
     * ritorna una Stringa vettore contenente il nome di tutte le nazioni posizionate corretamente
     * @return String [] nomeListaNazione
     */
-   public String[] nomeListaNazione ()
+   public String[] nomiNazioni ()
    {
 	   String[] nomeListaNazione = new String [listaNazione.size()];
 	   for(int i= 0 ; i < listaNazione.size(); i++ )nomeListaNazione [i]= getNomeNazioneLista(i); 
@@ -86,7 +86,9 @@ public class ElencoNazione
    {
 	   return listaNazione.get(posizioneNazione);
    }
-   
+   /*
+    * passare le nazioni per nascondere gli indici
+    */
    public void addNazioneOro(int posizioneNazioneOro)
    {
 	   prendiNazione(posizioneNazioneOro).piuOro();

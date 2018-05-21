@@ -17,12 +17,25 @@ public class  MenuPrincipale
 	final static String CORNICE = "-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_";
 	final static String CORNICESECONDARIA = "-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*";
 	 
-	static MyMenu menuPrincipale()
+	/**
+	 * 
+	 * genera un menu per Medagliere main
+	 *@param
+	 *@return menuPrincipale;
+	 */
+	public static MyMenu menuPrincipale()
 	   {
 		   MyMenu menuPrincipale = new MyMenu(TITOLOMENUPRINCIPALE, VOCIMENUPRINCIPALE);
 	       return menuPrincipale;
 	   }
-	 	 
+	 /**
+	  * metodo privato per la stampa di un sotto menu	 
+	  * @param lista
+	  * @param dimLista
+	  * @param titolo
+	  * @param cornice
+	  * @param corniceSecondaria
+	  */
 	 static private void bellaStampaLista(String[] lista, int dimLista ,String  titolo, String cornice,  String corniceSecondaria )
 	 {
 		 int i = 0;
@@ -49,6 +62,10 @@ public class  MenuPrincipale
         	 }
          System.out.println(cornice);
 	 }
+	 /**
+	  *  stampa una lista completa delle nazioni presenti
+	  * @param gestoreGaraNazione
+	  */
 
      static public void stampaNazioni(UtilityGaraNazione gestoreGaraNazione) 
 	 
@@ -64,6 +81,10 @@ public class  MenuPrincipale
        bellaStampaLista(nazioniDaStampare, gestoreGaraNazione.getQuantitaNazione(), TITOLOSTAMPANAZIONI, CORNICE, CORNICESECONDARIA );
 	 }
      
+     /**
+      * Stampa una lista di gare
+      * @param gestoreGaraNazione
+      */
      
      static public void stampaGara(UtilityGaraNazione gestoreGaraNazione) 
 	 
@@ -79,6 +100,11 @@ public class  MenuPrincipale
        bellaStampaLista(daStampare, gestoreGaraNazione.getQuantitaGara(), TITOLOSTAMPAGARE, CORNICE, CORNICESECONDARIA );
 	 }
      
+     
+     /**
+      * Ordina la listaNazione in base alle medaglie vinte
+      * @param gestoreGaraNazione
+      */
      static public void ordinaListaNazioni(UtilityGaraNazione gestoreGaraNazione)
      {
     	 gestoreGaraNazione.ordinaNazioni();
